@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+/* Navigation bar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: black;
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  align-items: center;
+  /* position: fixed; */
+}
+/* Nav-icon */
+i {
+  color: white;
+  padding: 1.5vw;
+  margin: 1vw;
+}
+
+i:hover {
+  color: black;
+  background-color: white;
+}
+
+.topmenu a {
+  text-decoration: none;
+  color: white;
+  padding: 1vw;
+  margin: 1vh 1vw;
+}
+.topmenu a:hover {
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+}
+.topmenu {
+  display: flex;
+}
+
+/* Body */
+
+.me {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+.me::before {
+  content: "";
+  background-image: url(images/mydetails.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0vh;
+  right: 0vw;
+  bottom: 0vh;
+  left: 0vw;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+/* My image */
+#myphoto {
+  height: 24vh;
+  width: 13vw;
+  /* padding: 1vw; */
+  margin: 3vw;
+  margin-bottom: 0;
+  border: 5px solid white;
+  border-radius: 50%;
+  transition: height 0.1s, width 0.1s;
+}
+
+#myphoto:hover {
+  height: 30vh;
+  width: 17vw;
+}
+
+/* My information */
+.myinfo {
+  padding: 10vh;
+  padding-top: 28vh;
+  /* padding-left: 20vw; */
+}
+.myinfo p {
+  color: white;
+  font-size: 2vw;
+  padding: 1vw;
+}
+
+.personal_info {
+  margin: 8vh;
+  padding-top: 0;
+}
+.personal_info ul {
+  padding: 2vw;
+  padding-top: 0;
+  list-style: none;
+}
+.personal_info ul li {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.4vw;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* Education */
+#education {
+  border-top: 10px groove black;
+}
+#education div {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+#education div::before {
+  content: "";
+  background-image: url(images/education.png);
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+#education div div {
+  border: 4px groove rgb(87, 188, 222);
+  height: 45vh;
+  width: 10vw;
+  margin: 0.1vw;
+  transition: height 0.5s, width 0.5s;
+}
+#education div div:hover {
+  width: 40vw;
+  height: 50vh;
+  margin: vw;
+}
+#education div div p {
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  opacity: 0.8;
+  margin: 7vw 1vw;
+  display: none;
+}
+#education div div:hover p {
+  display: block;
+}
+#education h1 {
+  text-align: center;
+  background-color: rgb(248, 206, 129);
+  font-size: 3vw;
+  color: black;
+}
+
+#lfvs:hover {
+  background-image: url(images/lfvs_image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#ips:hover {
+  background-image: url(images/ips_image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#crcs:hover {
+  background-image: url(images/crcs_image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#cu:hover {
+  background-image: url(images/cu_image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#lfvs {
+  background-image: url(images/lfvs_image\(2\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#ips {
+  background-image: url(images/ips_image\(2\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#crcs {
+  background-image: url(images/crcs_image\(2\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#cu {
+  background-image: url(images/cu_image\(2\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
